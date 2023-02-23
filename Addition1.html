@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+</head>
+<body>
+    Enter first number <input type="number" id="first">
+    <br><br>
+    Enter second number <input type="number" name="" id="second">
+    <br><br>
+    <button onclick="add()">Addition</button>
+    <button onclick="sub()">Subtraction</button>
+    <button onclick="mul()">Multiplication</button>
+    <button onclick="div()">Division</button>
+    <p>Answer = <input id="demo"></p>
+    
+    <script>    
+        
+    function add(){
+    var a=parseInt(document.getElementById("first").value);
+    var b=parseInt(document.getElementById("second").value);
+    var c=a+b;
+    document.getElementById("demo").value = c;
+    }
+
+    function sub(){
+        var a=parseInt(document.getElementById("first").value);
+    var b=parseInt(document.getElementById("second").value);
+    var c=a-b;
+    
+document.getElementById("demo").value = c;
+    }
+
+    function mul(){
+        var a=parseInt(document.getElementById("first").value);
+    var b=parseInt(document.getElementById("second").value);
+    var c=a*b;
+    
+document.getElementById("demo").value = c;
+    }
+
+    function div(){
+    var a=parseInt(document.getElementById("first").value);
+    var b=parseInt(document.getElementById("second").value);
+    var c=a/b;
+    
+document.getElementById("demo").value = c;
+    }
+
+</script>
+
+</body>
+</html>
